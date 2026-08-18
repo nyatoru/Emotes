@@ -1,0 +1,10 @@
+{
+  "id": "emotecraft",
+  "name": "emotecraft",
+  "version": "${version}",
+  "description": "${description}",
+  "url": "https://github.com/KosmX/emotes",
+  "authors": ["KosmX", "dima_dencep"],
+  "main": "io.github.kosmx.emotes.velocity.VelocityWrapper",
+  "dependencies": []
+}

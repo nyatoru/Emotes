@@ -4,7 +4,7 @@ import me.modmuss50.mpp.ReleaseType
 
 plugins {
     id("xyz.wagyourtail.jvmdowngrader") version("1.3.6") apply false
-    id("xyz.wagyourtail.unimined") version "1.4.2-SNAPSHOT" apply false
+    id("xyz.wagyourtail.unimined") version "1.4.1" apply false
     id("com.gradleup.shadow") version "9.6.1" apply false
     id("me.modmuss50.mod-publish-plugin") version "2.2.0"
     id("org.redlance.dima_dencep.gradle.PublishToDiscord") version "1.0.8"
@@ -124,6 +124,10 @@ val ds = publishDiscord {
         val hangarProjectName = providers.gradleProperty("hangarProjectName").getOrElse("dima_dencep/emotecraft")
         val hangarLink = "https://hangar.papermc.io/$hangarProjectName/versions/${paper.mod_version}"
         custom("Paper (Hangar)", hangarLink, Emoji.HANGAR_EMOJI)
+        nextRow()
+
+        // Velocity
+        from(":velocity", "modrinth", title = "Velocity (Modrinth)")
         nextRow()
 
         // Geyser
