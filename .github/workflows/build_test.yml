@@ -31,6 +31,12 @@ jobs:
         if [ -d "paper/build/libs" ]; then
           cp paper/build/libs/*.jar artifacts/
         fi
+        if [ -d "velocity/build/libs" ]; then
+          cp velocity/build/libs/*.jar artifacts/
+        fi
+        if [ -d "geyser/build/libs" ]; then
+          cp geyser/build/libs/*.jar artifacts/
+        fi
         if [ -d "minecraft/fabric/build/libs" ]; then
           cp minecraft/fabric/build/libs/*.jar artifacts/
         fi
