@@ -61,6 +61,7 @@ tasks.shadowJar {
 }
 
 tasks.jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     archiveClassifier.set("dev")
 }
 
